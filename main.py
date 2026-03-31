@@ -48,8 +48,6 @@ def draw_landmarks_on_image(rgb_image, detection_result):
 Let's grab a test image that we'll use later. The image is from [Unsplash](https://unsplash.com/photos/mt2fyrdXxzk).
 """
 
-!wget -q -O image.jpg https://storage.googleapis.com/mediapipe-tasks/hand_landmarker/woman_hands.jpg
-
 import cv2
 from google.colab.patches import cv2_imshow
 
