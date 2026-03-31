@@ -43,38 +43,6 @@ def draw_landmarks_on_image(rgb_image, detection_result):
 
   return annotated_image
 
-"""## Download test image
-
-Let's grab a test image that we'll use later. The image is from [Unsplash](https://unsplash.com/photos/mt2fyrdXxzk).
-"""
-
-import cv2
-from google.colab.patches import cv2_imshow
-
-img = cv2.imread("hand_image.jpeg")
-cv2_imshow(img)
-
-"""Optionally, you can upload your own image. If you want to do so, uncomment and run the cell below."""
-
-# from google.colab import files
-# uploaded = files.upload()
-
-# for filename in uploaded:
-#   content = uploaded[filename]
-#   with open(filename, 'wb') as f:
-#     f.write(content)
-
-# if len(uploaded.keys()):
-#   IMAGE_FILE = next(iter(uploaded))
-#   print('Uploaded file:', IMAGE_FILE)
-
-"""## Running inference and visualizing the results
-
-Here are the steps to run hand landmark detection using MediaPipe.
-
-Check out the [MediaPipe documentation](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker/python) to learn more about configuration options that this solution supports.
-
-"""
 
 # STEP 1: Import the necessary modules.
 import mediapipe as mp
